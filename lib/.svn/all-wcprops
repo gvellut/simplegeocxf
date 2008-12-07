@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/2/trunk/lib
+END
+hamcrest-library-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/lib/hamcrest-library-1.1.jar
+END
+hamcrest-core-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/lib/hamcrest-core-1.1.jar
+END
+junit-4.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2/trunk/lib/junit-4.4.jar
+END
+jmock-junit4-2.4.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/lib/jmock-junit4-2.4.0.jar
+END
+spring-test.jar
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/lib/spring-test.jar
+END
+jmock-2.4.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/lib/jmock-2.4.0.jar
+END
+spring-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/lib/spring-sources.jar
+END

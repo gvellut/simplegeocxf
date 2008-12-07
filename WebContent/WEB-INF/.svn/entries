@@ -1,0 +1,46 @@
+8
+
+dir
+2
+https://myxom.googlecode.com/svn/trunk/WebContent/WEB-INF
+https://myxom.googlecode.com/svn
+
+
+
+2008-07-01T18:35:57.095124Z
+2
+Guilhem.Vellut
+
+
+svn:special svn:externals svn:needs-lock
+
+cxf.xml
+file
+
+
+
+
+2008-07-01T18:26:54.000000Z
+685bdf79c3ad3071a6e1f5c16a9471b8
+2008-07-01T18:35:57.095124Z
+2
+Guilhem.Vellut
+
+lib
+dir
+
+services-config
+dir
+
+web.xml
+file
+
+
+
+
+2008-07-01T18:26:54.000000Z
+c041ded30ba0767a3b4ff7cf5df066b4
+2008-07-01T18:35:57.095124Z
+2
+Guilhem.Vellut
+

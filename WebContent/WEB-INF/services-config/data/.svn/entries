@@ -1,0 +1,16 @@
+8
+
+dir
+2
+https://myxom.googlecode.com/svn/trunk/WebContent/WEB-INF/services-config/data
+https://myxom.googlecode.com/svn
+
+
+
+2008-07-01T18:35:57.095124Z
+2
+Guilhem.Vellut
+
+
+svn:special svn:externals svn:needs-lock
+

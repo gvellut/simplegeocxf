@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model
+END
+MapServiceTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model/MapServiceTests.java
+END
+context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model/context.xml
+END
+MapServiceConfigurationTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model/MapServiceConfigurationTests.java
+END
+MapServiceConfigurationSpringWiringTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model/MapServiceConfigurationSpringWiringTests.java
+END
+MapLayerTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model/MapLayerTests.java
+END
+sample-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2/trunk/test/com/gaiadyne/opengeoreports/server/model/sample-service.xml
+END

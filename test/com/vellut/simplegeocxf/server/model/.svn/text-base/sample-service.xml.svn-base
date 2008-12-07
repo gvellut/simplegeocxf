@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:inject="http://www.soft-amis.org/schema/inject4spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 					http://www.springframework.org/schema/beans/spring-beans.xsd
+ 					http://www.soft-amis.org/schema/inject4spring
+                    http://www.soft-amis.org/schema/inject4spring.xsd">
+
+	<bean class="com.gaiadyne.opengeoreports.server.model.MapService">
+		<inject:to-map target="mapServiceConfiguration"
+			name="mapServices" key="sample-service" />
+		<property name="crs">
+			<bean class="org.geotools.referencing.CRS"
+				factory-method="decode">
+				<constructor-arg value="EPSG:4326" />
+			</bean> 
+		</property>
+		<property name="background">
+			<bean class="java.awt.Color">
+				<constructor-arg index="0" type="int" value="150" />
+				<constructor-arg index="1" type="int" value="200" />
+				<constructor-arg index="2" type="int" value="255" />
+			</bean>
+		</property>
+		<property name="mapLayers">
+			<list>
+				<bean
+					class="com.gaiadyne.opengeoreports.server.model.MapLayer">
+					<property name="name" value="Layer 1" />
+					<property name="dataStore">
+						<bean class="org.geotools.data.DataStoreFinder"
+							factory-method="getDataStore">
+							<constructor-arg>
+								<map>
+									<entry key="url"
+										value="file:build/classes/com/gaiadyne/opengeoreports/server/data/bc_border.shp" />
+								</map>
+							</constructor-arg>
+						</bean>
+					</property>
+					<property name="style" >
+						<bean class="com.gaiadyne.opengeoreports.server.utils.SLDStyleBuilder"
+							factory-method="createStyle">
+							<constructor-arg>
+								<value>
+									<![CDATA[
+									  <UserStyle>
+									   <FeatureTypeStyle>
+									     <Rule>
+									       <LineSymbolizer>
+									         <Stroke>
+									           <CssParameter name="stroke">#ff00ff</CssParameter>
+									           <CssParameter name="width">3.0</CssParameter>
+									         </Stroke>
+									        </LineSymbolizer>
+									     </Rule>
+									   </FeatureTypeStyle>
+									  </UserStyle>
+									]]>
+								</value>
+							</constructor-arg>
+						</bean>
+					</property>
+				</bean>
+				<bean
+					class="com.gaiadyne.opengeoreports.server.model.MapLayer">
+					<property name="name" value="Layer 2" />
+					<property name="dataStore">
+						<bean class="org.geotools.data.DataStoreFinder"
+							factory-method="getDataStore">
+							<constructor-arg>
+								<map>
+									<entry key="url"
+										value="file:build/classes/com/gaiadyne/opengeoreports/server/data/countries.shp" />
+								</map>
+							</constructor-arg>
+						</bean>
+					</property>
+					<property name="style" >
+						<bean class="com.gaiadyne.opengeoreports.server.utils.SLDStyleBuilder"
+							factory-method="createStyle">
+							<constructor-arg>
+								<value>
+									<![CDATA[
+									  <UserStyle>
+										<FeatureTypeStyle>
+											<Rule>
+												<PolygonSymbolizer>
+													<Fill>
+														<CssParameter name="fill">#0000FF</CssParameter>
+													</Fill>
+												</PolygonSymbolizer>
+											</Rule>
+										</FeatureTypeStyle>
+									</UserStyle>
+									]]>
+								</value>
+							</constructor-arg>
+						</bean>
+					</property>
+				</bean>
+				<bean
+					class="com.gaiadyne.opengeoreports.server.model.MapLayer">
+					<property name="name" value="Layer 3" />
+					<property name="dataStore">
+						<bean class="org.geotools.data.DataStoreFinder"
+							factory-method="getDataStore">
+							<constructor-arg>
+								<map>
+									<entry key="url"
+										value="file:build/classes/com/gaiadyne/opengeoreports/server/data/cities.shp" />
+								</map>
+							</constructor-arg>
+						</bean>
+					</property>
+					<property name="style" >
+						<bean class="com.gaiadyne.opengeoreports.server.utils.SLDStyleBuilder"
+							factory-method="createStyle">
+							<constructor-arg>
+								<value>
+									<![CDATA[
+									 <UserStyle>
+										<FeatureTypeStyle>
+											<Rule>
+												<PointSymbolizer>
+													<Graphic>
+														<Mark>
+															<WellKnownName>SQUARE</WellKnownName>
+															<Fill>
+																<CssParameter name="fill">#FF0000</CssParameter>
+															</Fill>
+														</Mark>
+														<Size>5</Size>
+													</Graphic>
+												</PointSymbolizer>
+											</Rule>
+										</FeatureTypeStyle>
+									</UserStyle>
+									]]>
+								</value>
+							</constructor-arg>
+						</bean>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+</beans>
