@@ -34,7 +34,7 @@
 							<constructor-arg>
 								<map>
 									<entry key="url"
-										value="file:build/classes/com/gaiadyne/opengeoreports/server/data/bc_border.shp" />
+										value="file:build/classes/com/vellut/opengeoreports/server/data/bc_border.shp" />
 								</map>
 							</constructor-arg>
 						</bean>
@@ -72,7 +72,7 @@
 							<constructor-arg>
 								<map>
 									<entry key="url"
-										value="file:build/classes/com/gaiadyne/opengeoreports/server/data/countries.shp" />
+										value="file:build/classes/com/vellut/opengeoreports/server/data/countries.shp" />
 								</map>
 							</constructor-arg>
 						</bean>

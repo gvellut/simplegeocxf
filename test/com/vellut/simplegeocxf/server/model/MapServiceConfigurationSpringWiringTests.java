@@ -16,8 +16,8 @@ import com.vellut.simplegeocxf.server.service.model.MapSize;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-		"classpath:com/gaiadyne/opengeoreports/server/model/context.xml",
-		"classpath:com/gaiadyne/opengeoreports/server/model/sample-service.xml" })
+		"classpath:com/vellut/opengeoreports/server/model/context.xml",
+		"classpath:com/vellut/opengeoreports/server/model/sample-service.xml" })
 public class MapServiceConfigurationSpringWiringTests {
 	private MapServiceConfiguration mapServiceConfiguration;
 

@@ -1,12 +1,10 @@
 package com.vellut.simplegeocxf.server.service;
 
 import java.awt.Color;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.geotools.data.DataStore;
 import org.geotools.data.DataStoreFinder;
 import org.geotools.referencing.CRS;
 import org.geotools.styling.Style;
@@ -42,7 +40,7 @@ public class OpenGeoreportsServiceTests {
 		ArrayList<MapLayer> mapLayers = new ArrayList<MapLayer>();
 		MapLayer mapLayer = new MapLayer();
 		Map<String, String> params = new HashMap<String, String>();
-		params.put("url", "file:build/classes/com/gaiadyne/opengeoreports/server/data/bc_border.shp");
+		params.put("url", "file:build/classes/com/vellut/opengeoreports/server/data/bc_border.shp");
 		mapLayer.setDataStore(DataStoreFinder.getDataStore(params));
 		mapLayer.setName("bc_border");
 		mapLayer.setStyle(createLineStyle());
